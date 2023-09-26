@@ -1,4 +1,29 @@
-body {
+@font-face {
+    font-display: swap; 
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v17-cyrillic-regular.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap; 
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v17-cyrillic-700.woff2') format('woff2'); 
+  }
+
+@font-face {
+    font-display: swap; 
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-narrow-v18-cyrillic-700.woff2') format('woff2'); 
+  }
+  
+  
+  /* body {
     min-width: 960px;
     margin: 0;
     padding: 0;
@@ -12,7 +37,17 @@ body {
     background-image: url(../img/visual/background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-} 
+}  */
+
+
+body {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+/* 
+h2 {
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+} */
 
 a {
     text-decoration: none;
