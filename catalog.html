@@ -122,17 +122,19 @@
             </fieldset>
             <button class="button" type="submit">Показать</button>
           </form>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
+		  <div class="sorting-container">
+			  <select class="select-control" aria-label="Сортировка">
+				<option value="popular">Сначала популярное</option>
+				<option value="cheap">Сначала дешёвое</option>
+				<option value="expensive">Сначала дорогое</option>
+			  </select>
+			  <a class="button button-light" href="#">
+				<span class="visually-hidden">Показать список</span>
+			  </a>
+			  <a class="button" href="#">
+				<span class="visually-hidden">Показать карточки</span>
+			  </a>
+		  </div>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">

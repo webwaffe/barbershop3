@@ -68,12 +68,31 @@ body {
     background-color: #000000;
 }
 
-
-
 img {
     max-width: 100%;
     height: auto;
 }
+
+.button {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px; 
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.button-feedback {
+  color: #242424;
+}
+
+.button-light {
+  color: #242424;
+  background-color: #ffffff;
+}
+
 
 .page-header {
   color: #ffffff;
@@ -198,21 +217,6 @@ img {
   line-height: 24px; 
 }
 
-.button {
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px; 
-  text-transform: uppercase;
-  text-decoration: none;
-
-}
-
-.button-feedback {
-  color: #242424;
-}
-
 .appointment-title {
   color: #242424;
   font-size: 32px;
@@ -289,16 +293,6 @@ line-height: 24px;
   background-color: #242424;
 }
 
-.page-footer a {
-  color: #ffffff;
-}
-
-.page-footer .htmlacademy-link {
-  font-size: 14px;
-  color: #dbb590;
-}
-
-
 .page-footer-title {
   font-family: 'PT Sans Narrow';
   color: #ffffff;
@@ -324,6 +318,83 @@ line-height: 24px;
   text-decoration-line: underline;
 }
 
+.main-inner {
+	background-color: #FBF7F4;
+}
+
+.inner-header-title {
+	color: #242424;
+	font-size: 32px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
 
 
+.breadcrumbs {
+  color: #242424;
+  /* list-style: none; */
+}
 
+
+.breadcrumbs-link {
+  color: #595959;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #242424;
+  text-transform: uppercase;
+}
+
+.control-label {
+  font-weight: 700;
+}
+
+.sorting-container {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.product-card {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  color: #242424;
+}
+
+.product-card-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #814b18;
+  text-transform: uppercase;
+}
+
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #242424;
+  background-color: #ffffff;
+}
+
+.pagination-disabled {
+  background-color: #595959;
+}
