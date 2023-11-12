@@ -43,15 +43,25 @@ input[type="radio"].visually-hidden {
 *::after {
   box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
   
 body {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 16px; 
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    color: #242424;
-    background-color: #fbf7f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px; 
+  line-height: 24px;
+  color: #242424;
+  background-color: #fbf7f4;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 img {
@@ -88,6 +98,24 @@ img {
   background: #000000;
 }
 
+.navigation {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   color: inherit;
@@ -107,10 +135,29 @@ img {
   background-repeat: no-repeat;
 }
 
+.page-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans Narrow";
   color: #ffffff;
   text-align: center;
+  list-style: none;
+}
+
+.advantages-item {
+  width: 277px;
 }
 
 .advantages-title {
@@ -127,14 +174,22 @@ img {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
   color: #242424;
   background-color: #fbf7f4;
   background-image: url("../images/index-column-pattern.jpg");
 }
 
+.services-list {
+  list-style: none;
+}
+
 .services {
-  font-family: 'PT Sans Narrow';
+  font-family: "PT Sans Narrow";
   text-transform: uppercase;
+  width: 390px;
 }
 
 .services-title {
@@ -158,12 +213,28 @@ img {
   line-height: 28px; 
 }
 
+.gallery {
+  width: 390px;
+}
+
 .gallery-title {
   color: #242424;
   font-size: 32px;
   font-weight: 700;
   line-height: 35px; 
   text-transform: uppercase;
+}
+
+.slider-pagination {
+  list-style: none;
+}
+
+.contacts {
+  width: 350px;
+}
+
+.contacts-schedule {
+  list-style: none;
 }
 
 .contacts-title {
@@ -204,6 +275,10 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px; 
+}
+
+.appointment {
+  width: 430px;
 }
 
 .appointment-title {
@@ -323,42 +398,11 @@ img {
 }
 
 
-.footer-contacts-address {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 19px; 
+.page-footer-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
 }
-
-.footer-contacts-address-phone {
-  font-family: 'PT Sans Narrow';
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px; 
-  text-decoration-line: underline;
-  text-transform: uppercase;
-}
-
-.footer-contacts-map-link {
-  font-family: 'PT Sans Narrow';
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px; 
-  text-decoration-line: underline;
-  text-transform: uppercase;
-}
-
-
-.newsletter-form ::placeholder {
-  color: #BDBDBD;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px; 
-}
-
 .page-footer {
   font-size: 14px;
   font-weight: 700;
@@ -389,3 +433,54 @@ img {
   line-height: 19px; 
   text-decoration-line: underline;
 }
+
+.footer-contacts {
+  width: 200px;
+  margin-right: 130px;
+}
+
+.footer-contacts-address {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px; 
+}
+
+.footer-contacts-address-phone {
+  font-family: 'PT Sans Narrow';
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; 
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.footer-contacts-map-link {
+  font-family: 'PT Sans Narrow';
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; 
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.newsletter-form ::placeholder {
+  color: #BDBDBD;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; 
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social {
+  margin-left: auto;
+  max-width: 190px;
+}
+
+
