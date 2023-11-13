@@ -12,28 +12,53 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О нас</a>
+            <a class="navigation-link" href="#">О нас</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="faq.html">Частые вопросы</a>
+            <a class="navigation-link" href="#">Частые вопросы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_124523_436)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#BDBDBD"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_124523_436">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>  
+              <span class="visually-hidden">Поиск</span>             
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_124523_444)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#BDBDBD"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_124523_444">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link navigation-link-login" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" fill="#BDBDBD" />
+              </svg>
+              Вход
+            </a>
           </li>
         </ul>
       </nav>
@@ -80,7 +105,7 @@
                 <b class="services-price">2300 ₽</b>
               </li>
             </ul>
-            <a class="button" href="#">Посмотреть все</a>
+            <a class="button button-all" href="#">Посмотреть все</a>
           </section>
           <section class="gallery">
             <h2 class="gallery-title">Фотогалерея</h2>
@@ -128,8 +153,10 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button" href="#">Как проехать</a>
-            <a class="button button-feedback" href="#">Обратная связь</a>
+            <p class="contacts-navigation">
+              <a class="button" href="#">Как проехать</a>
+              <a class="button button-feedback" href="#">Обратная связь</a>
+            </p>
           </section>
           <section class="appointment">
             <h2 class="appointment-title">Записаться</h2>
@@ -182,17 +209,17 @@
           <h2 class="page-footer-title">Давайте дружить</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-tw" href="#">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-vk" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="footer-social-link footer-social-instagram" href="#">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
